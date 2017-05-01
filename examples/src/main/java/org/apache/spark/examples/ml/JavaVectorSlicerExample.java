@@ -50,7 +50,7 @@ public class JavaVectorSlicerExample {
     AttributeGroup group = new AttributeGroup("userFeatures", attrs);
 
     List<Row> data = Arrays.asList(
-      RowFactory.create(Vectors.sparse(3, new int[]{0, 1}, new double[]{-2.0, 2.3})),
+      RowFactory.create(Vectors.sparse(3, new int[]{0, 1}, new double[]{-2.0, 2.3}).toDense()),
       RowFactory.create(Vectors.dense(-2.0, 2.3, 0.0))
     );
 
